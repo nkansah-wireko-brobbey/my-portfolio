@@ -6,7 +6,7 @@ const Banner = () => {
     <section className="w-full py-24 md:py-32 lg:py-40">
       <div className="container px-4 md:px-6 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight">
+          <h1 className="text-3xl sm:4xl md:text-4xl lg:text-6xl font-bold tracking-tight">
             {"I'm Nkansah Wireko-Brobbey."}
             <span className='text-primary ml-3'>{"<I Code/>"}</span>
         
