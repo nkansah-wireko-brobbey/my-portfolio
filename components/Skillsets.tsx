@@ -8,7 +8,7 @@ import { DiDatabase } from "react-icons/di";
 
 const Skillsets = () => {
   return (
-    <section className="w-full py-12 md:py-12 lg:py-12">
+    <section className="w-full py-12 md:py-12 lg:py-12" id='skillset'>
       <div className="container px-4 md:px-6">
         <div className="space-y-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">My Skills</h2>

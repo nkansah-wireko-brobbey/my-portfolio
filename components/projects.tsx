@@ -2,10 +2,12 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/componen
 import Link from "next/link"
 import { BsGlobe2 } from "react-icons/bs"
 import { DiGit } from "react-icons/di"
+import { useRef } from "react"
 
 export default function Projects() {
+
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24 lg:py-32" id="repos">
       <div className="container space-y-12 px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
