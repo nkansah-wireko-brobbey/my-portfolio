@@ -22,17 +22,18 @@ export default function Projects() {
             <CardHeader>
               <div className="flex items-center gap-4">
                 <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>shadcn/ui</CardTitle>
+                <CardTitle>Weather App/Angular Signals</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Beautifully designed components that you can copy and paste into your apps.
+              This Simple Weather App showcases Angular Signals, offering beautifully designed components that you can copy and paste into your apps.
+
               </p>
             </CardContent>
             <CardFooter className="flex items-center gap-4">
               <Link
-                href="#"
+                href="https://github.com/nkansah-wireko-brobbey/my-weather-app"
                 target="_blank"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 prefetch={false}
@@ -41,7 +42,7 @@ export default function Projects() {
                 GitHub
               </Link>
               <Link
-                href="#"
+                href="https://my-weather-app-alpha-six.vercel.app/home"
                 target="_blank"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 prefetch={false}
@@ -55,17 +56,17 @@ export default function Projects() {
             <CardHeader>
               <div className="flex items-center gap-4">
                 <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>acme-inc/website</CardTitle>
+                <CardTitle>Message App / Angular - SocketIO</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                The official website for Acme Inc, a leading provider of innovative products.
+              A Message App built with Angular and SocketIO, featuring beautifully designed components that you can copy and paste into your apps.
               </p>
             </CardContent>
             <CardFooter className="flex items-center gap-4">
               <Link
-                href="#"
+                href="https://github.com/nkansah-wireko-brobbey/msg-app"
                 target="_blank"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 prefetch={false}
@@ -74,7 +75,7 @@ export default function Projects() {
                 GitHub
               </Link>
               <Link
-                href="#"
+                href="https://msg-app-eight.vercel.app/"
                 target="_blank"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 prefetch={false}
@@ -88,17 +89,17 @@ export default function Projects() {
             <CardHeader>
               <div className="flex items-center gap-4">
                 <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>vercel/next.js</CardTitle>
+                <CardTitle>Backend Message App/NodeJs</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                The React framework for building production-ready websites and applications.
+              A robust backend for the Message App built with Express & NodeJs, featuring beautifully designed components that you can copy and paste into your apps.
               </p>
             </CardContent>
             <CardFooter className="flex items-center gap-4">
               <Link
-                href="#"
+                href="https://github.com/nkansah-wireko-brobbey/msg-box-backend"
                 target="_blank"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 prefetch={false}
@@ -107,7 +108,7 @@ export default function Projects() {
                 GitHub
               </Link>
               <Link
-                href="#"
+                href="https://github.com/nkansah-wireko-brobbey/msg-box-backend"
                 target="_blank"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 prefetch={false}
@@ -121,17 +122,17 @@ export default function Projects() {
             <CardHeader>
               <div className="flex items-center gap-4">
                 <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>tailwindlabs/tailwindcss</CardTitle>
+                <CardTitle>Movie Vault / NextJs</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                A utility-first CSS framework for rapidly building custom user interfaces.
+              A Movie Vault app built with NextJs, featuring beautifully designed components that you can copy and paste into your apps.
               </p>
             </CardContent>
             <CardFooter className="flex items-center gap-4">
               <Link
-                href="#"
+                href="https://github.com/nkansah-wireko-brobbey/film_vault"
                 target="_blank"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 prefetch={false}
@@ -140,7 +141,7 @@ export default function Projects() {
                 GitHub
               </Link>
               <Link
-                href="#"
+                href="https://film-vault-iota.vercel.app/"
                 target="_blank"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
                 prefetch={false}
@@ -150,68 +151,7 @@ export default function Projects() {
               </Link>
             </CardFooter>
           </Card>
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>prisma/prisma</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">Prisma is a next-generation ORM that makes database access easy.</p>
-            </CardContent>
-            <CardFooter className="flex items-center gap-4">
-              <Link
-                href="#"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <DiGit className="h-4 w-4" />
-                GitHub
-              </Link>
-              <Link
-                href="#"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <DiGit className="h-4 w-4" />
-                Live
-              </Link>
-            </CardFooter>
-          </Card>
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>react-query/react-query</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">Powerful asynchronous state management for React.</p>
-            </CardContent>
-            <CardFooter className="flex items-center gap-4">
-              <Link
-                href="#"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <DiGit className="h-4 w-4" />
-                GitHub
-              </Link>
-              <Link
-                href="#"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <BsGlobe2 className="h-4 w-4" />
-                Live
-              </Link>
-            </CardFooter>
-          </Card>
+          
         </div>
       </div>
     </section>
