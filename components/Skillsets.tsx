@@ -1,7 +1,7 @@
 import React from 'react'
-import { DiGit, DiReact } from "react-icons/di";
+import { DiAngularSimple, DiGit, DiReact } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
-import { SiHasura, SiJest, SiTailwindcss, SiVercel } from "react-icons/si";
+import { SiHasura, SiJest, SiSpringboot, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 import { DiDatabase } from "react-icons/di";
 
 
@@ -17,6 +17,27 @@ const Skillsets = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="space-y-4">
+            <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12 h-12 text-primary">
+              <SiSpringboot className="w-6 h-6" />
+            </div>
+            <div className="space-y-1">
+              <h3 className="text-lg font-semibold">Java Springboot</h3>
+              <p className="text-sm text-muted-foreground">
+              Proficient in developing robust and scalable backend services using Spring Boot.              </p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12 h-12">
+              <DiAngularSimple className="w-6 h-6" />
+            </div>
+            <div className="space-y-1">
+              <h3 className="text-lg font-semibold">Angular</h3>
+              <p className="text-sm text-muted-foreground">
+              Proficient in developing dynamic and responsive user interfaces using Angular.
+              </p>
+            </div>
+          </div>
           <div className="space-y-4">
             <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12 h-12">
               <DiReact className="w-6 h-6" />
@@ -85,10 +106,10 @@ const Skillsets = () => {
           </div>
           <div className="space-y-4">
             <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12 h-12">
-              <SiJest className="w-6 h-6" />
+              <SiTypescript className="w-6 h-6" />
             </div>
             <div className="space-y-1">
-              <h3 className="text-lg font-semibold">Jest</h3>
+              <h3 className="text-lg font-semibold">Typescript</h3>
               <p className="text-sm text-muted-foreground">
                 Skilled in writing and running unit tests using the Jest testing framework.
               </p>
@@ -99,7 +120,7 @@ const Skillsets = () => {
               <SiHasura className="w-6 h-6" />
             </div>
             <div className="space-y-1">
-              <h3 className="text-lg font-semibold">Cypress</h3>
+              <h3 className="text-lg font-semibold">Hasura GraphQL</h3>
               <p className="text-sm text-muted-foreground">
                 Experienced in GraphQL & Hasura.
               </p>
