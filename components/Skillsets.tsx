@@ -1,7 +1,7 @@
 import React from 'react'
 import { DiAngularSimple, DiGit, DiReact } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
-import { SiHasura, SiJest, SiSpringboot, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
+import { SiHasura, SiJest, SiNextdotjs, SiSpringboot, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 import { DiDatabase } from "react-icons/di";
 
 
@@ -25,6 +25,17 @@ const Skillsets = () => {
               <h3 className="text-lg font-semibold">Java Springboot</h3>
               <p className="text-sm text-muted-foreground">
               Proficient in developing robust and scalable backend services using Spring Boot.              </p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12 h-12">
+              <SiNextdotjs className="w-6 h-6" />
+            </div>
+            <div className="space-y-1">
+              <h3 className="text-lg font-semibold">NextJs</h3>
+              <p className="text-sm text-muted-foreground">
+              Proficient in developing dynamic and responsive user interfaces using NextJs.
+              </p>
             </div>
           </div>
           <div className="space-y-4">
