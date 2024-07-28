@@ -17,16 +17,7 @@ const Skillsets = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <div className="space-y-4">
-            <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12 h-12 text-primary">
-              <SiSpringboot className="w-6 h-6" />
-            </div>
-            <div className="space-y-1">
-              <h3 className="text-lg font-semibold">Java Springboot</h3>
-              <p className="text-sm text-muted-foreground">
-              Proficient in developing robust and scalable backend services using Spring Boot.              </p>
-            </div>
-          </div>
+          
           <div className="space-y-4">
             <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12 h-12">
               <SiNextdotjs className="w-6 h-6" />
@@ -58,6 +49,16 @@ const Skillsets = () => {
               <p className="text-sm text-muted-foreground">
                 Proficient in building dynamic and responsive user interfaces using React.
               </p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12 h-12 text-primary">
+              <SiSpringboot className="w-6 h-6" />
+            </div>
+            <div className="space-y-1">
+              <h3 className="text-lg font-semibold">Java Springboot</h3>
+              <p className="text-sm text-muted-foreground">
+              Proficient in developing robust and scalable backend services using Spring Boot.              </p>
             </div>
           </div>
           <div className="space-y-4">
