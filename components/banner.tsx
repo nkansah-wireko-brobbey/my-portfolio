@@ -12,7 +12,7 @@ const Banner = () => {
         
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-foreground/80">
-          {"I'm software engineer specializing in front-end development. I enjoy creating visually appealing and user-friendly web applications."}
+          {"I'm software engineer. I enjoy creating visually appealing and user-friendly applications."}
           </p>
           <Link
             href="#repos"
