@@ -3,6 +3,8 @@ import Link from "next/link"
 import { BsGlobe2 } from "react-icons/bs"
 import { DiGit } from "react-icons/di"
 import { useRef } from "react"
+import projects from '@/constants/projects'
+import Project from "./project"
 
 export default function Projects() {
 
@@ -18,139 +20,11 @@ export default function Projects() {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>Weather App/Angular Signals</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-              This Simple Weather App showcases Angular Signals, offering beautifully designed components that you can copy and paste into your apps.
-
-              </p>
-            </CardContent>
-            <CardFooter className="flex items-center gap-4">
-              <Link
-                href="https://github.com/nkansah-wireko-brobbey/my-weather-app"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <DiGit className="h-4 w-4" />
-                GitHub
-              </Link>
-              <Link
-                href="https://my-weather-app-alpha-six.vercel.app/home"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <BsGlobe2 className="h-4 w-4" />
-                Live
-              </Link>
-            </CardFooter>
-          </Card>
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>Message App / Angular - SocketIO</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-              A Message App built with Angular and SocketIO, featuring beautifully designed components that you can copy and paste into your apps.
-              </p>
-            </CardContent>
-            <CardFooter className="flex items-center gap-4">
-              <Link
-                href="https://github.com/nkansah-wireko-brobbey/msg-app"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <DiGit className="h-4 w-4" />
-                GitHub
-              </Link>
-              <Link
-                href="https://msg-app-eight.vercel.app/"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <BsGlobe2 className="h-4 w-4" />
-                Live
-              </Link>
-            </CardFooter>
-          </Card>
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>Backend Message App/NodeJs</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-              A robust backend for the Message App built with Express & NodeJs, featuring beautifully designed components that you can copy and paste into your apps.
-              </p>
-            </CardContent>
-            <CardFooter className="flex items-center gap-4">
-              <Link
-                href="https://github.com/nkansah-wireko-brobbey/msg-box-backend"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <DiGit className="h-4 w-4" />
-                GitHub
-              </Link>
-              <Link
-                href="https://github.com/nkansah-wireko-brobbey/msg-box-backend"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <BsGlobe2 className="h-4 w-4" />
-                Live
-              </Link>
-            </CardFooter>
-          </Card>
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <DiGit className="h-8 w-8 text-muted-foreground" />
-                <CardTitle>Movie Vault / NextJs</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-              A Movie Vault app built with NextJs, featuring beautifully designed components that you can copy and paste into your apps.
-              </p>
-            </CardContent>
-            <CardFooter className="flex items-center gap-4">
-              <Link
-                href="https://github.com/nkansah-wireko-brobbey/film_vault"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <DiGit className="h-4 w-4" />
-                GitHub
-              </Link>
-              <Link
-                href="https://film-vault-iota.vercel.app/"
-                target="_blank"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                prefetch={false}
-              >
-                <BsGlobe2 className="h-4 w-4" />
-                Live
-              </Link>
-            </CardFooter>
-          </Card>
+          {
+            projects.map((project,idx)=>(
+              <Project key={idx} project={project}/>
+            ))
+          }
           
         </div>
       </div>
