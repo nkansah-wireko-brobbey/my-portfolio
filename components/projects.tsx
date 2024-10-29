@@ -1,8 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"
-import Link from "next/link"
-import { BsGlobe2 } from "react-icons/bs"
-import { DiGit } from "react-icons/di"
-import { useRef } from "react"
+
 import projects from '@/constants/projects'
 import Project from "./project"
 
