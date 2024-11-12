@@ -1,3 +1,4 @@
+import { contacts } from "@/constants/contacts";
 import Link from "next/link";
 import { DiGit } from "react-icons/di";
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
@@ -14,54 +15,32 @@ export default function Contact() {
             Find me on GitHub, LinkedIn, and email.
           </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex items-center gap-4 rounded-lg border bg-background p-4 shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+        <div  className="grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+        {
+          contacts.map((contact)=>{
+            return (
+          <div key={contact.name} className="flex items-center gap-4 rounded-lg border bg-background p-4 shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
             <div className="rounded-full bg-primary p-2 text-primary-foreground">
-              <SiGithub className="h-6 w-6" />
+              <contact.icon className="h-6 w-6" />
             </div>
             <div className="flex-1 space-y-1">
-              <p className="text-sm font-medium">GitHub</p>
+              <p className="text-sm font-medium">{contact.name}</p>
               <Link
-                href="https://github.com/nkansah-wireko-brobbey"
+                href={contact.link}
                 className="text-sm text-muted-foreground hover:underline"
                 prefetch={false}
               >
-                /nkansah-wireko-brobbey
+                {contact.username}
               </Link>
             </div>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border bg-background p-4 shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-            <div className="rounded-full bg-primary p-2 text-primary-foreground">
-              <SiLinkedin className="h-6 w-6" />
-            </div>
-            <div className="flex-1 space-y-1">
-              <p className="text-sm font-medium">LinkedIn</p>
-              <Link
-                href="https://www.linkedin.com/in/nkansah-wireko-brobbey/"
-                className="text-sm text-muted-foreground hover:underline"
-                prefetch={false}
-              >
-                /in/nkansah-wireko-brobbey/
-              </Link>
-            </div>
-          </div>
-          <div className="flex items-center gap-4 rounded-lg border bg-background p-4 shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-            <div className="rounded-full bg-primary p-2 text-primary-foreground">
-              <SiGmail className="h-6 w-6" />
-            </div>
-            <div className="flex-1 space-y-1">
-              <p className="text-sm font-medium">Email</p>
-
-              <Link
-                href="mailto:nkansahwirekobrobbey@gmail.com"
-                className="text-sm text-muted-foreground hover:underline"
-                prefetch={false}
-              >
-                nkansahwirekobrobbey@gmail.com
-              </Link>
-            </div>
-          </div>
-        </div>
+         
+       
+         
+        )
+      })
+    }
+    </div>
       </div>
     </section>
   );
