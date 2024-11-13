@@ -4,6 +4,7 @@ import Banner from "@/components/banner";
 import Skillsets from "@/components/Skillsets";
 import Projects from "@/components/projects";
 import Contact from "@/components/contact";
+import PortfolioSection from "@/components/portfolio-section";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
      <Banner />
      <Skillsets />
      <Projects />
+     <PortfolioSection/>
      <Contact />
     </main>
   );

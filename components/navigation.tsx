@@ -36,6 +36,13 @@ const Navigation = () => {
             Portfolio
           </Link>
           <Link
+            href="#ui/ux"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
+            UI/UX Projects
+          </Link>
+          <Link
             href="#contact"
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}

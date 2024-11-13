@@ -10,7 +10,7 @@ const fontSans = FontSans({
 })
 export const metadata: Metadata = {
   title: "Nkansah Wireko-Brobbey | Software Engineer",
-  description: "I'm a software engineer. I specialize in building (and occasionally designing) exceptional digital experiences.",
+  description: "I'm a software engineer. I specialize in building (and designing) exceptional digital experiences.",
 
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
 
         <body
         className={cn(
