@@ -14,7 +14,7 @@ export const portfolioShots = [
     shotsLink: "https://dribbble.com/shots/25166836-Tesla-Landing-Page-Redesign",
     prototypeLink: "https://dribbble.com/shots/25166836-Tesla-Landing-Page-Redesign",
     description:
-      "A reactive login system dynamically updates form validation as users type, offering instant feedback on input errors (e.g., invalid email format). It improves UX with real-time validation and smooth, fast login responses.",
+      "Designed Tesla's landing page to captivate users with a sleek, minimalist layout. Bold typography and interactive features making it easy for visitors to explore and learn about their innovative vehicles",
     title: "Tesla Landing Redesign",
     briefDescription: "",
     toolsUsed: ["Figma"],
