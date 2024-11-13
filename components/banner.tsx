@@ -8,7 +8,8 @@ const Banner = () => {
         <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-3xl sm:4xl md:text-4xl lg:text-6xl font-bold tracking-tight">
             {"I'm Nkansah Wireko-Brobbey."}
-            <span className='text-primary ml-3'>{"<I Code/>"}</span>
+            <br />
+            <span className='text-primary ml-3'>{"<I Code & Design/>"}</span>
         
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-foreground/80">
